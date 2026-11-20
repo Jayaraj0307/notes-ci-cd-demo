@@ -11,3 +11,4 @@ push code > CI checks it > merge > CD deploys that exact commit to Render > smok
 * Run locally: `pip install -r requirements-dev.txt`, copy `.env.example` to `.env`, then
   `python -m app.migrate` and `uvicorn app.main:app --reload --port 8000`. Open http://localhost:8000/docs.
 * Checks: `ruff check .` and `pytest -v` (needs `TEST_DATABASE_URL`, a separate Neon branch).
+Render deployment trigger test
